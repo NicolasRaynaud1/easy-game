@@ -72,7 +72,10 @@ const app = {
         app.checkPlayerGuess(playerGuess);
     },
 
-
+    /**
+     * compares player's guess with the random number
+     * @param playerGuess 
+     */
     checkPlayerGuess: function (playerGuess) {
 
         app.guessCount++;
@@ -85,6 +88,9 @@ const app = {
         app.playerInput.value = "";
     },
 
+    /**
+     * Displays the Win message and add the possibility to replay the game
+     */
     winMessage: function () {
         app.lower.classList.add('none');
         app.higher.classList.add('none');
@@ -96,6 +102,9 @@ const app = {
         app.replay.classList.remove('none');
     },
 
+    /**
+     * Displays the Loose message and add the possibility to replay the game
+     */
     looseMessage: function () {
         app.lower.classList.add('none');
         app.higher.classList.add('none');
@@ -109,10 +118,16 @@ const app = {
         
     },
 
+    /**
+     * Displays a message to help the player 
+     */
     higherMessage: function () {
         app.higher.classList.remove('none');
     },
 
+    /**
+     * Displays a message to help the player 
+     */
     lowerMessage: function () {
         app.lower.classList.remove('none');
     }
