@@ -36,7 +36,7 @@ h1, h2, p {
     color: #fffffe;
 }
 
-.home, .ingame {
+.game_home, .game_ingame {
     width: 600px;
     height: 400px;
     padding: 1rem;
@@ -49,30 +49,30 @@ h1, h2, p {
     text-align: center;
 }
 
-.home h1 {
+.game_home h1 {
     font-weight: bold;
     font-size: 2.5rem;
 }
 
-.home h2, .question {
+.game_home h2, .game_ingame_question {
     font-weight: 500;
     font-size: 2rem;
 }
 
-.ready {
+.game_home_ready {
     font-weight: bold;
 }
 
-.button_wrapper {
+.game_ingame_button-wrapper {
     position: relative;
     width: 200px;
     height: 50px;
 }
 
-.startButton, .player_submit, .replay {
+.game_home_start-btn, .game_ingame_form_player-submit, .game_ingame_replay-btn {
     width: 200px;
     height: 50px;
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
     
     border: none;
     border-radius: 10px;
@@ -85,7 +85,7 @@ h1, h2, p {
     box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.3),
                 -1px -3px 5px 0px rgba(0, 0, 0, 0.3);
   }
-  .startButton:hover, .player_submit:hover, .replay {
+  .game_home_start-btn:hover, .game_ingame_form_player-submit:hover, .replaygame_ingame_replay-btn {
     color: #f9bc60;
     background: transparent;
 
@@ -108,7 +108,7 @@ h1, h2, p {
     transition: all 500ms;
   }
 
-.player_input {
+.game_ingame_form_player-input{
     height: 100px;
     width: 100px;
     margin-bottom: 1rem;
@@ -134,7 +134,7 @@ input::-webkit-inner-spin-button {
 
 /* messages */
 
-.higher, .lower {
+.game_ingame_higher-msg, .game_ingame_lower-msg {
     width: 100px;
     height: 50px;
     text-align: center;
@@ -155,7 +155,7 @@ input::-webkit-inner-spin-button {
     transition: 300ms;
 }
 
-.win {
+.game_ingame_win-msg {
     width: 350px;
     height: 200px;
 
@@ -176,7 +176,7 @@ input::-webkit-inner-spin-button {
                 -1px -3px 5px 0px rgba(0, 0, 0, 0.3); 
 }
 
-.loose {
+.game_ingame_loose-msg {
     width: 350px;
     height: 200px;
 
@@ -210,7 +210,7 @@ input::-webkit-inner-spin-button {
     transition: 300ms;
     }
 
-    .home, .ingame, .win, .loose, .replay {
+    .game_home, .game_ingame, .game_ingame_win-msg, .game_ingame_loose-msg, .game_ingame_replay-btn {
         width: fit-content;
         transition: 300ms;
     }

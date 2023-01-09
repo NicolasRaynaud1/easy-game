@@ -14,33 +14,33 @@
 
     <main class="game">
 
-        <section class="home">
+        <section class="game_home">
 
             <h1>Jeu du + ou -</h1>
             <h2>Règles du jeu:</h2>
-            <p class="rules">Les règles sont simples: j'ai choisis un nombre aléatoire entre compris 0 et 100 inclus. Tu as 10 essais pour le retrouver. A chacunes de tes propositions, je te donnerai une indication pour t'aider à trouver.</p>
-            <p class="ready">Tu es prêt ?</p>
+            <p>Les règles sont simples: j'ai choisis un nombre aléatoire entre compris 0 et 100 inclus. Tu as 10 essais pour le retrouver. A chacunes de tes propositions, je te donnerai une indication pour t'aider à trouver.</p>
+            <p class="game_home_ready">Tu es prêt ?</p>
 
-            <button class="startButton">C'est parti !</button>
+            <button class="game_home_start-btn">C'est parti !</button>
 
         </section>
 
-        <section class="ingame none">
+        <section class="game_ingame none">
 
-            <p class="question">Quelle est ta proposition ?</p>
+            <p class="game_ingame_question">Quelle est ta proposition ?</p>
 
-            <form class="form" onsubmit="return false;">
-                <input type="number" class="player_input"><br>
-                <button class="player_submit">Soumettre</button>
+            <form onsubmit="return false;">
+                <input type="number" class="game_ingame_form_player-input"><br>
+                <button class="game_ingame_form_player-submit">Soumettre</button>
             </form>
             
-            <p class="higher none">Trop haut !</p>
-            <p class="lower none">Trop bas !</p>
-            <p class="win none">Bravo, tu as trouvé !</p>
-            <p class="loose none">Dommage, tu n'as pas réussi à retrouver mon nombre : </p>
+            <p class="game_ingame_higher-msg none">Trop haut !</p>
+            <p class="game_ingame_lower-msg none">Trop bas !</p>
+            <p class="game_ingame_win-msg none">Bravo, tu as trouvé !</p>
+            <p class="game_ingame_loose-msg none">Dommage, tu n'as pas réussi à retrouver mon nombre : </p>
 
-            <div class="button_wrapper">
-                <button class="replay none">Rejouer</button>
+            <div class="game_ingame_button-wrapper">
+                <button class="game_ingame_replay-btn none">Rejouer</button>
             </div>
             
 

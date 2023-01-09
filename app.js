@@ -1,17 +1,17 @@
 const app = {
 
     // get all DOM elements we'll need
-    'home': document.querySelector(".home"),
-    'startButton': document.querySelector(".startButton"),
-    'ingame': document.querySelector(".ingame"),
-    'question': document.querySelector(".question"),
-    'playerInput': document.querySelector(".player_input"),
-    'playerSubmit': document.querySelector(".player_submit"),
-    'higher': document.querySelector(".higher"),
-    'lower': document.querySelector(".lower"),
-    'win': document.querySelector(".win"),
-    'loose': document.querySelector(".loose"),
-    'replay': document.querySelector(".replay"),
+    'home': document.querySelector(".game_home"),
+    'startButton': document.querySelector(".game_home_start-btn"),
+    'ingame': document.querySelector(".game_ingame"),
+    'question': document.querySelector(".game_ingame_question"),
+    'playerInput': document.querySelector(".game_ingame_form_player-input"),
+    'playerSubmit': document.querySelector(".game_ingame_form_player-submit"),
+    'higher': document.querySelector(".game_ingame_higher-msg"),
+    'lower': document.querySelector(".game_ingame_lower-msg"),
+    'win': document.querySelector(".game_ingame_win-msg"),
+    'loose': document.querySelector(".game_ingame_loose-msg"),
+    'replay': document.querySelector(".game_ingame_replay-btn"),
 
     'randomNumber': null,
     'guessCount': 0,
