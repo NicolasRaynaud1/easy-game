@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@100;400;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Game</title>
 </head>
@@ -16,8 +17,9 @@
         <section class="home">
 
             <h1>Jeu du + ou -</h1>
-            <h2 class="rules_title">Règles du jeu:</h2>
-            <p class="rules">Les règles sont simples: j'ai choisis un nombre aléatoire entre compris 0 et 100 inclus. Tu as 10 essais pour le retrouver. A chacunes de tes propositions, je t'indiquerai si mon nombre est plus élevé ou moins élevé que ta proposition. <span class="ready">Tu es prêt ?</span></p>
+            <h2>Règles du jeu:</h2>
+            <p class="rules">Les règles sont simples: j'ai choisis un nombre aléatoire entre compris 0 et 100 inclus. Tu as 10 essais pour le retrouver. A chacunes de tes propositions, je te donnerai une indication pour t'aider à trouver.</p>
+            <p class="ready">Tu es prêt ?</p>
 
             <button class="startButton">C'est parti !</button>
 
@@ -28,16 +30,19 @@
             <p class="question">Quelle est ta proposition ?</p>
 
             <form class="form" onsubmit="return false;">
-                <input type="number" class="player_input">
+                <input type="number" class="player_input"><br>
                 <button class="player_submit">Soumettre</button>
             </form>
-
+            
             <p class="higher none">Trop haut !</p>
             <p class="lower none">Trop bas !</p>
             <p class="win none">Bravo, tu as trouvé !</p>
             <p class="loose none">Dommage, tu n'as pas réussi à retrouver mon nombre : </p>
 
-            <button class="replay none">Rejouer</button>
+            <div class="button_wrapper">
+                <button class="replay none">Rejouer</button>
+            </div>
+            
 
         </section>
 
